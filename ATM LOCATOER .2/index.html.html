@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Locator - Advanced</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+</head>
+<body>
+    <header>
+        <h1>ATM Locator - Alandi, Pune</h1>
+        <nav>
+            <a href="#map">Map View</a>
+            <a href="#list">ATM List</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+    <main>
+        <section id="mapSection">
+            <h2>ATM Map</h2>
+            <div id="map"></div>
+        </section>
+        <section id="listSection">
+            <h2>ATM Details</h2>
+            <div id="filter">
+                <input type="text" id="search" placeholder="Search ATM by name...">
+                <select id="statusFilter">
+                    <option value="all">All</option>
+                    <option value="Available">Available</option>
+                    <option value="Out of Service">Out of Service</option>
+                </select>
+            </div>
+            <div id="atmList"></div>
+        </section>
+        <section id="aboutSection">
+            <h2>About</h2>
+            <p>This application helps you locate nearby ATMs in Alandi, Pune. You can view the status of ATMs, find the nearest one, and navigate to it.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ATM Locator. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
